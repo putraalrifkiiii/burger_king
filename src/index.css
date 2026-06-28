@@ -4,3 +4,9 @@
   --color-primary: #4d613b;
   --color-secondary: #7ec92c;
 }
+
+@layer components {
+  .button {
+    @apply bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 font-bold border-1 border-green-950 px-4 rounded-xl py-2;
+  }
+}
