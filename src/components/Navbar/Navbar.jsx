@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/burger-logo.png";
-import Navlink from "../../index";
+import { Navlink } from "../../index";
 
 function Navbar() {
   return (

@@ -1,8 +1,8 @@
-import burger1 from "./assets/burger-1.jpg";
-import burger2 from "./assets/burger-2.jpg";
-import burger3 from "./assets/burger-3.jpg";
+import burger1 from "./assets/burger-1.png";
+import burger2 from "./assets/burger-2.png";
+import burger3 from "./assets/burger-3.png";
 
-const Navlink = [
+export const Navlink = [
   { id: 1, title: "Home", link: "/" },
   { id: 2, title: "Menu", link: "/menu" },
   { id: 3, title: "About", link: "/about" },
@@ -10,10 +10,8 @@ const Navlink = [
   { id: 5, title: "Contact", link: "/contact" },
 ];
 
-const BurgersImage = [
+export const ImageList = [
   { id: 1, img: burger1 },
   { id: 2, img: burger2 },
   { id: 3, img: burger3 },
 ];
-
-export default Navlink;

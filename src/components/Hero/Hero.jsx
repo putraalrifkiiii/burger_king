@@ -1,4 +1,7 @@
 import BackgroundImage from "../../assets/background.png";
+import BurgerLogo from "../../assets/burger-1.png";
+import { ImageList } from "../../index";
+import { useState } from "react";
 
 const bgImage = {
   backgroundImage: `url(${BackgroundImage})`,
@@ -8,6 +11,7 @@ const bgImage = {
 };
 
 function Hero() {
+  const [selectedImage, setSelectedImage] = useState(ImageList[0]);
   return (
     <div>
       <div>
@@ -25,7 +29,7 @@ function Hero() {
                   <span className="text-black">toBurger</span>King!
                 </span>
               </h1>
-              <p className="text-sm ">
+              <p className="text-sm text-justify">
                 salah satu makanan cepat saji yang terdiri dari roti bundar yang
                 diisi dengan daging, sayuran segar, keju, dan berbagai macam
                 saus. Makanan ini dikenal karena rasanya yang lezat,
@@ -33,13 +37,38 @@ function Hero() {
                 selera, sehingga menjadi salah satu hidangan favorit di berbagai
                 negara.
               </p>
-
-              <button className="self-center button">Order Now</button>
+              <div className="self-center">
+                <button className="button">Order Now</button>
+              </div>
             </div>
-            <div className="">
-              <h1 className="text-red-200  text-center bg-yellow-600 text-2xl font-bold mt-40 ">
+            <div className="flex justify-center items-center relative order-1 sm:order-2 ">
+              <div data-aos="fade-left" data-aos-delay="300">
+                <img
+                  src={selectedImage.img}
+                  alt="burger logo"
+                  className="max-w-[450px] w-full mx-auto hover:scale-105 duration-300 drop-shadow-[-6px_20px_15px_rgba(0,0,0,1)]"
+                />
+              </div>
+              <div className="flex sm:flex-col  sm:translate-x-4/2 ml-12 sm:py-2 justify-center absolute bg-white/30 rounded-full">
+                {ImageList.map((item) => (
+                  <div
+                    data-aos="zoom-in"
+                    key={item.id}
+                    data-aos-delay={item.id * 200}
+                  >
+                    <img
+                      key={item.id}
+                      src={item.img}
+                      onClick={() => setSelectedImage(item)}
+                      alt=""
+                      className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-105 duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+              {/* <h1 className="text-red-200 bg-yellow-600 text-2xl font-bold  ">
                 Delicious burgers made with the freshest ingredients!
-              </h1>
+              </h1> */}
             </div>
           </div>
         </div>
