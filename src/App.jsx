@@ -3,6 +3,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Service from "./components/Service/Service";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   useEffect(() => {
@@ -12,9 +14,11 @@ function App() {
     });
   }, []);
   return (
-    <div>
+    <div className="container mx-auto">
       <Navbar />
       <Hero />
+      <Service />
+      <Banner />
     </div>
   );
 }

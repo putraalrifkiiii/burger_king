@@ -11,7 +11,25 @@ export const Navlink = [
 ];
 
 export const ImageList = [
-  { id: 1, img: burger1 },
-  { id: 2, img: burger2 },
-  { id: 3, img: burger3 },
+  {
+    id: 1,
+    img: burger1,
+    name: "Burger Klasik",
+    description:
+      "Burger klasik dengan daging sapi panggang, selada segar, tomat, keju, dan saus spesial dalam roti yang lembut.",
+  },
+  {
+    id: 2,
+    img: burger2,
+    name: "Burger Daging Sapi",
+    description:
+      "Dibuat dari daging sapi premium yang juicy, dipadukan dengan sayuran segar dan saus khas untuk cita rasa yang kaya.",
+  },
+  {
+    id: 3,
+    img: burger3,
+    name: "Burger Premium",
+    description:
+      "Burger istimewa dengan bahan-bahan premium seperti daging sapi pilihan, keju berkualitas, dan saus spesial yang memberikan pengalaman rasa terbaik.",
+  },
 ];

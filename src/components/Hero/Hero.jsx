@@ -1,5 +1,4 @@
 import BackgroundImage from "../../assets/background.png";
-import BurgerLogo from "../../assets/burger-1.png";
 import { ImageList } from "../../index";
 import { useState } from "react";
 
@@ -38,7 +37,7 @@ function Hero() {
                 negara.
               </p>
               <div className="self-center">
-                <button className="button">Order Now</button>
+                <button className="button text-white">Order Now</button>
               </div>
             </div>
             <div className="flex justify-center items-center relative order-1 sm:order-2 ">
@@ -66,9 +65,6 @@ function Hero() {
                   </div>
                 ))}
               </div>
-              {/* <h1 className="text-red-200 bg-yellow-600 text-2xl font-bold  ">
-                Delicious burgers made with the freshest ingredients!
-              </h1> */}
             </div>
           </div>
         </div>
