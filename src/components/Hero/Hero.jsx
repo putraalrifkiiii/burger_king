@@ -14,7 +14,7 @@ function Hero() {
   return (
     <div>
       <div>
-        <div className="relative">
+        <div className=" container mx-auto relative">
           <div
             style={bgImage}
             className="lg:h-[calc(100vh-72px)] bg-green-300/30 min-h-[500px] blur-xs"

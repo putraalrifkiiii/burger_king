@@ -1,6 +1,7 @@
 import burger1 from "./assets/burger-1.png";
 import burger2 from "./assets/burger-2.png";
 import burger3 from "./assets/burger-3.png";
+import bannerBurger from "./assets/banner-burger.png";
 
 export const Navlink = [
   { id: 1, title: "Home", link: "/" },
@@ -33,3 +34,5 @@ export const ImageList = [
       "Burger istimewa dengan bahan-bahan premium seperti daging sapi pilihan, keju berkualitas, dan saus spesial yang memberikan pengalaman rasa terbaik.",
   },
 ];
+
+export const BannerBurger = [{ img: bannerBurger }];
